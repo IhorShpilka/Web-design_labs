@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Post2</title>
+	<meta charset="UTF-8">
+    <link href="css/stylearticle.css" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="controller.js"></script>
+    <script src="model.js"></script>
+	<script src="view.js"></script>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+		header { 
+		background-color: white;
+		padding: 10px;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+		text-align: center;
+		background-size: cover;
+		color: black;
+		font-size: 24px;
+		font-family: Arial;
+		margin: 15px auto;
+		font-weight: bold;
+		}  
+		</style>
+</head>
+
+<body>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			showCom();
+			});
+
+	</script>
+	<header>
+		<div class="header">
+         
+			<h1>My blog</h1>
+			<div class="menu">
+			<ul>
+			<li><a id="LatestNews" href="index.html">Latest Posts</a></li>
+			<li><a id="AboutUs" href="AboutUs.html">About us</a></li>
+			<li><a id="YourAccount" href="Account.html">Your Account</a></li>
+			<li><a id="Register" href="SignUp.html">Sign Up</a></li>
+			<li><a id="LogIn" href="LogIn.html">Log In</a></li>
+			</ul>
+			</div>
+	   </div>
+		<h1></h1>
+		<p>Date: Feb 13, 2024</p>
+	</header>
+
+	<main>
+		<img src="image/eng.jpg" alt="Campus">
+		<p>Experienced teachers say that the best way to master a skill is practice. That is why it is worth giving her as much time as possible. The optimal ratio is called 20/80, reflecting the idea that 20% of the effort leads to 80% of the results. This principle applies across various domains, from learning a musical instrument to mastering a new language.<br> <br> 
+			To delve deeper into this concept, let's consider the implications for skill development. The initial phase of learning often involves a steep learning curve, where progress seems slow and effort-intensive. However, as one gains familiarity and proficiency with the skill, the rate of improvement tends to accelerate. This acceleration can be attributed to the consolidation of fundamental concepts and the development of muscle memory, cognitive patterns, and problem-solving strategies.<br> <br> 
+			Moreover, consistent practice is crucial for skill retention and refinement. Repetition reinforces neural pathways in the brain, facilitating smoother execution and quicker decision-making. Through deliberate practice, individuals can identify weaknesses, experiment with different approaches, and progressively refine their techniques.<br> <br> 
+			Furthermore, the 20/80 principle underscores the importance of prioritizing tasks and focusing on high-impact activities. Rather than spreading oneself too thin across numerous tasks, it's more effective to allocate time and resources to the most critical aspects of skill development. By identifying key areas of improvement and dedicating focused practice sessions to them, learners can maximize their progress and achieve mastery more efficiently.<br> <br> 
+		</p>
+	</main>
+
+	<footer>
+		<div id="comArea">
+			<p>Comments</p>
+		</div>
+		
+		<form onsubmit="saveCom();">
+			<label for="name">Your name:</label>
+			<input type="text" id="name" name="name" required>
+	
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+	
+			<label for="comment">Your comment:</label>
+			<textarea id="comment" name="comment" required></textarea>
+	
+			<button type="submit">Send</button>
+			</form>
+	</footer>
+</body>
+</html>

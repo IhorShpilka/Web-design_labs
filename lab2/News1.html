@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Post1</title>
+	<meta charset="UTF-8">
+    <link href="css/stylearticle.css" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="controller.js"></script>
+    <script src="model.js"></script>
+	<script src="view.js"></script>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+		header { 
+		background-color: white;
+		padding: 10px;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+		text-align: center;
+		background-size: cover;
+		color: black;
+		font-size: 24px;
+		font-family: Arial;
+		margin: 15px auto;
+		font-weight: bold;
+		}  
+		</style>
+</head>
+
+<body>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			showCom();
+			});
+
+	</script>
+	<header>
+		<div class="header">
+         
+			<h1>My blog</h1>
+			<div class="menu">
+			<ul>
+			<li><a id="LatestNews" href="index.html">Latest Posts</a></li>
+			<li><a id="AboutUs" href="AboutUs.html">About us</a></li>
+			<li><a id="YourAccount" href="Account.html">Your Account</a></li>
+			<li><a id="Register" href="SignUp.html">Sign Up</a></li>
+			<li><a id="LogIn" href="LogIn.html">Log In</a></li>
+			</ul>
+			</div>
+	   </div>
+		<h1>How to choose a dog breed</h1>
+		<p>Date: Feb 16, 2024</p>
+	</header>
+
+	<main>
+		<img src="image/dog.jpeg" alt="dog">
+		<p>
+			<b>1.Size of Your House:</b><br><br>
+			If you live in a small apartment or have limited space, consider smaller breeds such as Chihuahuas, Pugs, or French Bulldogs. These breeds are well-suited to indoor living and require less space to roam.<br><br>
+			For those with larger homes or access to outdoor areas, larger breeds like Labrador Retrievers, Golden Retrievers, or German Shepherds may be more suitable. These breeds thrive with ample space to exercise and explore.<br><br>
+			<b>2. Time Commitment:</b><br><br>
+			Assess how much time you can realistically dedicate to caring for a dog. If you have a busy schedule and limited time for walks and play, consider low-maintenance breeds such as Basset Hounds, Greyhounds, or Cavalier King Charles Spaniels. These breeds typically require less exercise and grooming.<br><br>
+			If you have plenty of time to spare and enjoy being active with your pet, consider breeds that thrive on exercise and mental stimulation, such as Border Collies, Australian Shepherds, or Jack Russell Terriers. These breeds excel in activities like agility training and hiking.<br><br>
+			<b>3. Preferred Character:</b><br><br>
+			Think about the temperament and personality traits you desire in a dog. Are you looking for a loyal and affectionate companion, a playful and energetic partner, or a calm and easygoing pet?<br><br>
+			Breeds like Labrador Retrievers, Golden Retrievers, and Beagles are known for their friendly and sociable nature, making them great family pets.<br><br>
+			If you prefer independent and less demanding breeds, consider options like Shiba Inus, Basenjis, or Afghan Hounds, which are known for their aloof yet dignified demeanor.<br><br>
+		</p>
+	</main>
+
+	<footer>
+		<div id="comArea">
+			<p>Comments</p>
+		</div>
+		
+		<form onsubmit="saveCom();">
+        <label for="name">Your name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="comment">Your comment:</label>
+        <textarea id="comment" name="comment" required></textarea>
+
+        <button type="submit">Send</button>
+        </form>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login to Blog</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="controller.js"></script>
+    <script src="model.js"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+	<style>
+header { 
+        background-color: white;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        background-size: cover;
+        color: black;
+        font-size: 24px;
+        font-family: Arial;
+        margin: 15px auto;
+        font-weight: bold;
+        }  
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            font-family: Arial;
+            display: block;
+            margin-bottom: 10px;
+            font-weight: semi-bold;
+            color: grey;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"] {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            width: 300px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            width: 200px;
+            font-size: 18px;
+            font-weight: semi-bold;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+
+        p {
+        text-align: center;
+        margin: 50px;
+        font-size: 16px;
+        font-family: Arial;
+    }
+
+	</style>
+</head>
+<body>
+	<header>
+		<div class="header">
+         
+            <h1>My blog</h1>
+            <div class="menu">
+            <ul>
+            <li><a id="LatestNews" href="index.html">Latest Posts</a></li>
+            <li><a id="AboutUs" href="AboutUs.html">About us</a></li>
+            <li><a id="YourAccount" href="Account.html">Your Account</a></li>
+            <li><a id="Register" href="SignUp.html">Sign Up</a></li>
+            <li><a id="LogIn" href="LogIn.html">Log In</a></li>
+            </ul>
+            </div>
+       </div>
+	<main>
+	<form onsubmit="log();">
+		<label for="email">Your email</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="pass">Your Password</label>
+		<input type="password" id="pass" name="pass" required>
+
+		<input type="submit" value="Login">
+	</form>
+</main>
+</body>
+</html>
